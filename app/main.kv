@@ -1,0 +1,31 @@
+# main.kv
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: "Speech Emotion Recognition"
+        font_size: 24
+        size_hint_y: None
+        height: 50
+
+    Button:
+        text: "Record Audio"
+        size_hint_y: None
+        height: 50
+        on_release: app.record_audio()
+
+    Button:
+        text: "Upload Audio"
+        size_hint_y: None
+        height: 50
+        on_release: app.upload_audio()
+
+    Label:
+        id: result_label
+        text: "Prediction Result: "
+        font_size: 20
+        size_hint_y: None
+        height: 50

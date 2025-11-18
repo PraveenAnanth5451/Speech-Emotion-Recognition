@@ -1,0 +1,10 @@
+kivy
+tensorflow
+librosa
+numpy
+scikit-learn
+joblib
+pandas
+sounddevice
+matplotlib
+seaborn
